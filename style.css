@@ -1,0 +1,222 @@
+/*总体*/
+    html{
+        background-color: black;
+        color:white;
+        align:center;
+        font-family: 'Ubuntu', sans-serif;
+    }
+    a:link{
+        text-decoration: none;
+    }
+    a:active{
+        text-decoration: none;   
+    }
+    div.all{
+        width:800px;
+        left:0;
+        right:0;
+        margin:0 auto;
+    }
+/*总体结束*/
+
+/*标题*/
+    header{
+        margin-bottom: auto;
+        color:rgb(253,116,0);
+        z-index:2;
+    }    
+    img{
+        width: 100%;
+        }
+    iframe{
+        width:100%;
+        height:471px;
+    }
+    /*导航栏*/
+    a.nav-above{
+        color:rgb(0, 0, 0);
+        font-size: larger;
+        font-weight:bolder;
+        font-family: 'Rampart One', cursive;
+    }
+    a.nav{
+        color:rgb(253,116,0);
+    }
+    ul.nav{
+        background-color: rgb(0,208,252);
+        list-style: none;
+        display:flex;
+        justify-content: space-evenly;
+        line-height: 40px;
+        margin:auto;
+    }
+    li{
+        margin-top:0;
+        height:40px;
+        width:150px;
+        text-align: center;
+    }
+    li.nav:hover{
+        background-color: rgb(253,116,0);
+
+    }
+    a.nav:hover{
+        color:rgb(254, 166, 90)
+    }
+/*标题结束*/
+
+/*主要*/
+    /*侧边*/
+        aside{
+            float:left;
+            position:fixed;
+            z-index:1;
+            padding-left:0;
+            margin-left:0;
+            width:10%;
+            height:500px;
+        }
+        .aside{
+            text-decoration: none;
+            color:rgb(0,208,252);
+        }
+        .aside:hover{
+            color:rgb(254, 166, 90);
+        }
+        .aside:active{
+            background-color: rgb(0,208,252);
+        }
+        h3{
+            padding-left: 7%;
+            font-size: 20px;
+        }
+        h5.aside{
+            padding-left: 10%;
+            font-size: 15px;
+        }
+    /*侧边结束*/
+
+    /*内容*/
+        section{
+            float:right;
+            margin-left:20%;
+        }
+        a.official{
+            text-decoration: none;
+            color:rgb(253,116,0);
+        }
+        div.mode{
+            display:grid;
+            grid-template-columns:1fr;
+            grid-gap:20px;
+        }
+        div.mode_description{
+            display:grid;
+            grid-template-columns: 2fr 8fr;
+            grid-gap:20px;
+        }
+        div.role{
+            display:grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-gap:20px;
+            text-align: center;
+        }
+        h3.mode{
+            text-align: center;
+        }
+        p{
+            margin-top: 0;
+            color:rgb(190, 190, 190);
+            font-size: 16px;
+            line-height: 26px;
+        }
+        p:hover{
+            color:white;
+        }
+        img.mode{
+            width:100%;
+        }
+        img.mode:hover{
+            animation-name: hover;
+            animation-duration: 2s;
+        }
+        @keyframes hover{
+            0%{transform: rotate(90deg);}
+            8%{transform: rotate(-90deg);}
+            16%{transform: rotate(60deg);}
+            31%{transform: rotate(-60deg);}
+            46%{transform:rotate(15deg);}
+            73%{transform: rotate(-15deg);}
+            100%{transform: rotate(0deg);}
+        }
+       
+        img.role{
+            border-radius: 10%;;
+        }
+        img.role:hover{
+            rotate:10deg;
+            transform:scale(1.5);
+        }
+        table{
+            margin-left:20%;
+            line-height: 40px;
+            text-align: center;
+            width:80%;
+            margin-top:20px;
+        }
+        caption{
+            color:rgb(253,116,0);
+            font-size: larger;
+            font-weight: bolder;
+        }
+        .goosechapel{
+            background-image: url(image/maps/goosechapel.png);
+            background-size: 100% 100%;
+            height: 400px;
+        }
+        div.move{
+
+        }
+
+        .move{
+            width:50px;
+            border-radius: 50%;
+            animation-name:walking;
+            animation-duration:10s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes walking {
+            0%{transform:translate(67px,42px);}
+            5%{transform:translate(67px,76px);}
+            15%{transform:translate(124px,76px);}
+            25%{transform:translate(124px,127px);}
+            35%{transform:translate(195px,127px);}
+            45%{transform:translate(195px,88px);}
+            50%{transform:translate(228px,88px);}
+            60%{transform:translate(228px,38px);}
+            62%{transform:translate(218px,38px);}
+            67%{transform:translate(218px,12px);}
+            70%{transform:translate(205px,5px);}
+            78%{transform:translate(155px,5px);}
+            80%{transform:translate(155px,0px);}
+            92%{transform:translate(67px,0px);}
+            100%{transform:translate(67px,42px);}
+        }
+    /*内容结束*/
+/*主要结束*/
+/*页尾*/
+    footer{
+        text-align: center;
+        width:100%;
+        line-height: 10px;
+        padding:10%;
+    }
+    p.footer{
+        color:white;
+    }
+    a.footer{
+        text-decoration: none;
+        color:white;
+        font-size: small;
+    }
+/*页尾结束*/
